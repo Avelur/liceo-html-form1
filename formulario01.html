@@ -6,15 +6,23 @@
     <title>Formulario01</title>
 </head>
 <body>
+    <h1>Rellena tu CV</h1>
     <form>
         <label for="nombre">Nombre</label><br>
         <input type="text" id="nombre" name="inputNombre" style="width: 250px"><br>
         <label for="apellido">Apellido</label><br>
-        <input type="password" name="inputApellido" id="apellido" style="width: 500px"><br>
+        <input type="text" name="inputApellido" id="apellido" style="width: 450px"><br>
         <label for="contraseña">Contraseña</label><br>
-        <input type="text" name="inputContraseña" id="contraseña" style="width: 100px;"><br>
+        <input type="password" name="inputContraseña" id="contraseña" style="width: 100px;"><br>
         <label for="dni">DNI</label><br>
-        <input type="text" name="inputDni" id="dni"><br>
+        <input type="text" name="inputDni" id="dni" placeholder="Ej: 12345678A"><br>
+        <label for="sexo">Sexo</label><br>
+        <input type="radio" name="inputHombre" id="hombre"><label for="hombre">Hombre</label><br>
+        <input type="radio" name="inputMujer" id="mujer"><label for="mujer">Mujer</label><br>
+        <label for="foto">Incluir foto</label><input type="file" name="inputFoto" id="foto"><br>
+        <input type="checkbox" name="inputSub" id="sub"><label for="sub">Subscribirse al boletín de novedades</label><br>
+        <input type="button" name="inputGuardar" id="guardar" value="Guardar cambios">
+        <input type="button" name="inputBorrar" id="borrar" value="Borrar datos">
     </form>
 </body>
 </html>
